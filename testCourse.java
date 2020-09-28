@@ -1,5 +1,9 @@
 package testCourse;
 import java.util.Scanner;
+/*
+Officer:Takeda Nana
+V.1
+*/
 public class testCourse
 {
 	public static void main(String[] args)
