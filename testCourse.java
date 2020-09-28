@@ -1,7 +1,7 @@
 package testCourse;
 import java.util.Scanner;
 /*
-Officer:Takeda Nana
+Manager:Takeda Nana
 V.1 Driver
 */
 public class testCourse
