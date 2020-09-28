@@ -1,8 +1,4 @@
-package testCourse;
-/*
-Manager:Takeda Nana
-V.1 Driver
-*/
+package utwork;
 public class Course
 {
 	private String[] students = new String[100];
