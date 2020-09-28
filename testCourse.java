@@ -1,10 +1,6 @@
-package testCourse;
+package utwork;
 import java.util.Scanner;
-/*
-Manager:Takeda Nana
-V.1 Driver
-*/
-public class testCourse
+public class TestCourse
 {
 	public static void main(String[] args)
 	{
@@ -20,18 +16,18 @@ public class testCourse
 		course3.addStudent("Zhang");course3.addStudent("Kim Jong-un");course3.addStudent("Gen Shi");
 		course4.addStudent("Wang");course4.addStudent("Lulu");course4.addStudent("Gate");
 		course4.addStudent("Brandt");course4.addStudent("Planck");course4.addStudent("Schweitzer");
-		int usingcode=0;
-		int coursecode=0;
+		int usingCode=0;
+		int courseCode=0;
 		Scanner buffer = new Scanner(System.in);
 		do
 		{
-			System.out.println("please choose the Coursecode.");
+			System.out.println("please choose the courseCode.");
 			System.out.println("【1463】 Foundation of computer science");
 			System.out.println("【5473】 Japanese");
 			System.out.println("【9511】 Computer Network");
 			System.out.println("【7715】 Information Security");
-			coursecode = buffer.nextInt();
-			switch(coursecode)
+			courseCode = buffer.nextInt();
+			switch(courseCode)
 			{
 				case 1463:
 					do
@@ -45,9 +41,9 @@ public class testCourse
 						System.out.println("【5】Student Name");
 						System.out.println("【6】Course Name");
 						System.out.println("【7】Teacher Name");
-						usingcode = buffer.nextInt();
-						course1.get(usingcode);
-					}while(usingcode!=0);
+						usingCode = buffer.nextInt();
+						course1.get(usingCode);
+					}while(usingCode!=0);
 					break;
 				case 5473:
 					do
@@ -61,9 +57,9 @@ public class testCourse
 						System.out.println("【5】Student Name");
 						System.out.println("【6】Course Name");
 						System.out.println("【7】Teacher Name");
-						usingcode = buffer.nextInt();
-						course2.get(usingcode);
-					}while(usingcode!=0);
+						usingCode = buffer.nextInt();
+						course2.get(usingCode);
+					}while(usingCode!=0);
 					break;
 				case 9511:
 					do
@@ -77,9 +73,9 @@ public class testCourse
 						System.out.println("【5】Student Name");
 						System.out.println("【6】Course Name");
 						System.out.println("【7】Teacher Name");
-						usingcode = buffer.nextInt();
-						course3.get(usingcode);
-					}while(usingcode!=0);
+						usingCode = buffer.nextInt();
+						course3.get(usingCode);
+					}while(usingCode!=0);
 					break;
 				case 7715:
 					do
@@ -93,12 +89,12 @@ public class testCourse
 						System.out.println("【5】Student Name");
 						System.out.println("【6】Course Name");
 						System.out.println("【7】Teacher Name");
-						usingcode = buffer.nextInt();
-						course4.get(usingcode);
-					}while(usingcode!=0);
+						usingCode = buffer.nextInt();
+						course4.get(usingCode);
+					}while(usingCode!=0);
 			}
 			
-		}while(coursecode!=0);buffer.close();
+		}while(courseCode!=0);buffer.close();
 		
 	}
 }
