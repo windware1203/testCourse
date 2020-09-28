@@ -2,7 +2,7 @@ package testCourse;
 import java.util.Scanner;
 /*
 Officer:Takeda Nana
-V.1
+V.1 Driver
 */
 public class testCourse
 {
