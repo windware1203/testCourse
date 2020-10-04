@@ -1,4 +1,3 @@
-package utwork;
 import java.util.Scanner;
 public class TestCourse
 {
