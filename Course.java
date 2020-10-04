@@ -1,4 +1,3 @@
-package utwork;
 public class Course
 {
 	private String[] students = new String[100];
