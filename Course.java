@@ -1,3 +1,8 @@
+/**
+Manager:Takeda Nana
+V.2 Functional Object
+
+*/
 public class Course
 {
 	private String[] students = new String[100];
