@@ -1,4 +1,10 @@
+
 import java.util.Scanner;
+/**
+Manager:Takeda Nana
+V.2 Driver
+
+*/
 public class TestCourse
 {
 	public static void main(String[] args)
@@ -20,58 +26,30 @@ public class TestCourse
 		Scanner buffer = new Scanner(System.in);
 		do
 		{
-			System.out.println("please choose the courseCode.");
-			System.out.println("【1463】 Foundation of computer science");
-			System.out.println("【5473】 Japanese");
-			System.out.println("【9511】 Computer Network");
-			System.out.println("【7715】 Information Security");
+			print();
 			courseCode = buffer.nextInt();
 			switch(courseCode)
 			{
 				case 1463:
 					do
 					{ 
-						System.out.println("This is course one.please buffer the code.");
-						System.out.println("【0】exit");
-						System.out.println("【1】Course Code");
-						System.out.println("【2】Total Number Of Students");
-						System.out.println("【3】Course Credit");
-						System.out.println("【4】Course Intro.");
-						System.out.println("【5】Student Name");
-						System.out.println("【6】Course Name");
-						System.out.println("【7】Teacher Name");
+						print();
 						usingCode = buffer.nextInt();
-						course1.get(usingCode);
+						course3.get(usingCode);
 					}while(usingCode!=0);
 					break;
 				case 5473:
 					do
 					{ 
-						System.out.println("This is course one.please buffer the code.");
-						System.out.println("【0】exit");
-						System.out.println("【1】Course Code");
-						System.out.println("【2】Total Number Of Students");
-						System.out.println("【3】Course Credit");
-						System.out.println("【4】Course Intro.");
-						System.out.println("【5】Student Name");
-						System.out.println("【6】Course Name");
-						System.out.println("【7】Teacher Name");
+						print();
 						usingCode = buffer.nextInt();
-						course2.get(usingCode);
+						course3.get(usingCode);
 					}while(usingCode!=0);
 					break;
 				case 9511:
 					do
 					{ 
-						System.out.println("This is course one.please buffer the code.");
-						System.out.println("【0】exit");
-						System.out.println("【1】Course Code");
-						System.out.println("【2】Total Number Of Students");
-						System.out.println("【3】Course Credit");
-						System.out.println("【4】Course Intro.");
-						System.out.println("【5】Student Name");
-						System.out.println("【6】Course Name");
-						System.out.println("【7】Teacher Name");
+						print();
 						usingCode = buffer.nextInt();
 						course3.get(usingCode);
 					}while(usingCode!=0);
@@ -79,21 +57,27 @@ public class TestCourse
 				case 7715:
 					do
 					{ 
-						System.out.println("This is course one.please buffer the code.");
-						System.out.println("【0】exit");
-						System.out.println("【1】Course Code");
-						System.out.println("【2】Total Number Of Students");
-						System.out.println("【3】Course Credit");
-						System.out.println("【4】Course Intro.");
-						System.out.println("【5】Student Name");
-						System.out.println("【6】Course Name");
-						System.out.println("【7】Teacher Name");
+						print();
 						usingCode = buffer.nextInt();
-						course4.get(usingCode);
+						course3.get(usingCode);
 					}while(usingCode!=0);
+					break;
 			}
 			
 		}while(courseCode!=0);buffer.close();
 		
+	}
+		
+	public static void print()
+	{
+		System.out.println("This is course one.please input the code.");
+		System.out.println("【0】exit");
+		System.out.println("【1】Course Code");
+		System.out.println("【2】Total Number Of Students");
+		System.out.println("【3】Course Credit");
+		System.out.println("【4】Course Intro.");
+		System.out.println("【5】Student Name");
+		System.out.println("【6】Course Name");
+		System.out.println("【7】Teacher Name");
 	}
 }
