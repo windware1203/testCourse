@@ -13,10 +13,10 @@ public class TestCourse
 		Course course2 = new Course("Japanese","Dr. Takeda","Enhancing your Japanese language skill about reading and writing.","5473",2);
 		Course course3 = new Course("Computer Network","Dr. Ishigawa","A computer network is a group of computers that use a set of common communication protocols over digital interconnections for the purpose of sharing resources located on or provided by the network nodes. ","9511",3);
 		Course course4 = new Course("Information Security","Dr. Obama","Information security, sometimes shortened to infosec, is the practice of protecting information by mitigating information risks. It is part of information risk management.","7715",3);
-		course1.addStudent(109898,"LIN",1233);
-		course2.addStudent(109228,"Zoe",1233);
-		course3.addStudent(102118,"Sayuri",1021);
-		course4.addStudent(109318,"Peter",2011);
+		course1.addStudent(109898,"LIN",1233);course1.addStudent(109871,"Wuyos",1233);
+		course2.addStudent(109228,"Zoe",1233);course2.addStudent(109111,"Kaga",1213);
+		course3.addStudent(102118,"Sayuri",1021);course3.addStudent(102098,"Bobo",1012);
+		course4.addStudent(109318,"Peter",2011);course4.addStudent(109819,"ZuK Osas",2210);
 		int usingCode=0;
 		int courseCode=0;
 		Scanner buffer = new Scanner(System.in);
