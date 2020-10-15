@@ -1,9 +1,10 @@
+package utwork;
 public class Student {
 	private int studentID;
 	private String studentName;
-	private String studentClass;
+	private int studentClass;
 	
-	public  Student(int studentID,String studentName,String studentClass,String studentBorn){
+	public  Student(int studentID,String studentName,int studentClass){
 		this.studentID = studentID;
 		this.studentName = studentName;
 		this.studentClass = studentClass;
@@ -17,7 +18,7 @@ public class Student {
 		return studentName;
 	}
 	
-	public String getStudentClasst() {
+	public int getStudentClasst() {
 		return studentClass;
 	}
 	
