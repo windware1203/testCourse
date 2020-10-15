@@ -1,3 +1,5 @@
+package utwork;
+import java.util.*;
 /**
 Manager:Takeda Nana
 V.2 Functional Object
@@ -5,12 +7,11 @@ V.2 Functional Object
 */
 public class Course
 {
-	private String[] students = new String[100];
+	private ArrayList<Student> students = new ArrayList<Student>();
 	private String teacherName;
 	private String courseName;
 	private String courseIntro;
 	private String courseCode;
-	private int numOfStudents;
 	private int courseCredit;
 	
 	public Course(String CourseName,String TeacherName
@@ -22,10 +23,9 @@ public class Course
 		this.courseCode = CourseCode;
 		this.courseCredit = CourseCredit;
 	}
-	public void addStudent(String student)
+	public void addStudent(int studentID,String studentName,int studentClass)
 	{
-		students[numOfStudents] = student;
-		numOfStudents++;
+		students.add(new Student(studentID,studentName,studentClass));
 	}
 	public boolean get(int code)
 	{
@@ -77,7 +77,7 @@ public class Course
 	}
 	public void getnumOfStudents()
 	{
-		System.out.println("The number of students is " + this.numOfStudents);
+		System.out.println("The number of students is " + this.students.size());
 	}
 	public void getCourseCredit()
 	{
@@ -91,10 +91,10 @@ public class Course
 	{
 		System.out.println("Names of all students in the class : ");
 		System.out.println("");
-		for(int i=0;i<students.length;i++)
+		for(int i=0;i<students.size();i++)
 		{
-			if(students[i]!=null)
-				System.out.println(students[i]);
+			if(students.get(i)!=null)
+				System.out.println(students.get(i));
 		}
 	}
 	public void getCourseName()
